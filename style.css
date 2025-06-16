@@ -125,6 +125,17 @@ a:hover{
 }
 
 .texto_dogs{
-display: block;
+    padding-left: 1rem;
+    font-size: 80%;
+    color: aliceblue;
+    font-weight: 300;
+
+}
+
+#descricao{
+
+    font-weight: 400;
+
+
 
 }

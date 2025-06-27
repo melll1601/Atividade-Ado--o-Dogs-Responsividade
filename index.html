@@ -10,12 +10,11 @@
 </head>
 <body>
 
-    <header>
 
-        <img src="assets/menu_hamburguer.png" alt="menu hamburguer" class="hamburguer">
-            
+
+    <header>
         <div class="menu">
-        
+            <img src="assets/aumigo logo.png" alt="logo do site aumigo" class="logo">
             <nav>
                 <ul class="menu">
                     <li> <a href="#">Para Adoção</a></li>
@@ -23,33 +22,57 @@
                     <li> <a href="">Adote</a></li>
                 </ul>
             </nav>  
-            <img src="assets/aumigo logo.png" alt="logo do site aumigo" class="logo">
-  
-        </div>
+        </div>     
+        <img src="assets/menu_hamburguer.png" alt="menu hamburguer" class="hamburguer">
    </header> 
+
+
 
     <section class="banner">
 
-        <div class="imagem_banner">
+        <div class="banner_texto">
+            <h1>Todo cão merece um lar. Todo lar merece um Aumigo.</h1>
 
-            <img src="/assets/banner hannah.png" alt="banner">
+            <nav>
+                <li><a href="#">Adote</a></li>
+                <li><a href="#">Veja Mais</a></li>
+            </nav>
+        </div>
+    </section>
 
-            <div class="texto_banner">
-                <h1>Todo cão merece um lar. Todo lar merece um Aumigo.</h1>
 
-                <nav class="botao_banner">
-                    <li><a href="#">Adote</a></li>
-                    <li><a href="#">Veja Mais</a></li>
-                </nav>
 
-            </div>
+    <section class="car6_SobreNos">
 
+        <div class="titulo_card">        
+            <img src="/assets/icone_dog.png" alt="icone do titulo">
+            <h1> Sobre Nós</h1>
+        </div>
+
+        <div class="sobre_nos">        
+
+            <h1 id="sobrenos">Somos uma equipe dedicada a dar voz e vez aos cães que aguardam por um lar. Cada cachorro que resgatamos é tratado com carinho e respeito, porque acreditamos que todo animal merece uma vida digna e cheia de amor. Nossa missão vai além de encontrar lares: queremos construir laços verdadeiros entre pessoas e seus novos amigos de quatro patas. Aqui, cada adoção é um reencontro — de esperança, cuidado e amizade. -Junte-se a nós nessa jornada de transformação. Porque juntos, podemos mudar muitas vidas.</h1>
+            <img src="/assets/porqueadotar.png" alt="foto de dog">
+
+    </section>
+    
+    <section class="card2_PqAdotar">
+
+        <div class="titulo_card">        
+            <img src="/assets/icone_dog.png" alt="icone do titulo">
+            <h1> Por Que Adotar?</h1>
+        </div>
+        <div class="adotar">
+            <h1>Ao adotar, você não escolhe apenas um companheiro — você transforma uma vida. E, no processo, transforma a sua também. Porque o amor de um cachorro adotado é diferente: é grato, intenso e verdadeiro. Ele sente que foi escolhido. E retribui isso todos os dias com lealdade e afeto. Adotar não é apenas salvar — é ser salvo também. É entender que o lar que você oferece pode ser exatamente o lar que você também precisava.</h1>
         </div>
 
     </section>
 
-
     <section class="card1_Dogs">
+        <div class="titulo_card">        
+            <img src="/assets/icone_dog.png" alt="icone do titulo">
+            <h1> Veja alguns AUmigos!</h1>
+        </div>
 
         <div class="cachorros">
             <img src="assets/cachorro1.png" alt="Cachorro para adoção, Hannah">
@@ -69,26 +92,80 @@
             </div>
         </div>
 
+        <div class="cachorros">
+            <img src="assets/cachorro3.png" alt="Cachorro para adoção, Tiofilo">
+            
+            <div class="texto_dogs">
+                <h1>Tiofilo - 2 meses</h1>
+                <h3 id="descricao">Foi abandonado, tem muito medo, mas adora carinho. </h3>
+            </div>
+        </div>
 
-
-
-
-
-
-
-    </section>
-
-    <section class="card2_PqAdotar">
-
-
-
-
+         <div class="cachorros">
+            <img src="assets/cachorro4.png" alt="Cachorro para adoção, Edimara">
+            
+            <div class="texto_dogs">
+                <h1>Edimara - 5 meses</h1>
+                <h3 id="descricao"> Adora brincar, adora receber carinho na barriga. </h3>
+            </div>
+        </div>
 
     </section>
 
     <section class="card3_Adoção">
 
+        <div class="titulo_card">        
+            <img src="/assets/icone_dog.png" alt="icone do titulo">
+            <h1> Adote seu AUmigos!</h1>
+        </div>
 
+        <div class="formulario">
+
+            <div class="perguntas">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="seu nome completo">
+            </div>
+
+            <br>
+
+            <div class="perguntas">
+                <label for="data">Data de Nascimento:</label>
+                <input type="number" name="data" placeholder="--/--/----">
+            </div>
+
+            <br>
+
+            <div class="perguntas">
+                <label for="telefone">Telefone:</label>
+                <input type="number" name="telefone"  placeholder="(00) 0000-0000">
+            </div>
+
+            <br>
+
+            <div class="perguntas">
+                <label for="cpf">CPF:</label>
+                <input type="number" name="cpf"  placeholder="123.456.678.90">
+            </div>
+
+            <br>
+
+            <div class="perguntas">
+                <label for="cachorro">Adotar:</label>
+                <input type="text" name="cachorro"  placeholder="ex: floquinho">
+            </div>
+
+            <br> 
+
+            <div class="perguntas">
+                <label for="porque">Porque Deseja Adotar:</label>
+                <input type="text" name="porque"  placeholder="motivo da adoção">
+            </div>
+
+            <br>
+
+            <button type="submit">Enviar Pedido de Adoção</button>
+
+        </div>
 
 
 
@@ -102,7 +179,7 @@
 
     </section>
 
-    <section class="car5_CachorrosJaAdotados">
+    <section class="car5_Feedback">
 
 
 
@@ -110,13 +187,6 @@
 
     </section>
 
-    <section class="car6_SobreNos">
 
-
-
-
-
-    </section>
-    
 </body>
 </html>

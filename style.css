@@ -11,10 +11,120 @@ background-color: #63413a;
 
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: auto;
+    padding-left: 1%;
+}
 
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 2rem;
+}
+
+.hamburguer {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
+
+    .logo {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        width: auto;
+    }
+
+    .menu {
+        display: none !important;
+    }
+
+    .hamburguer {
+        display: block;
+        padding-right: 0.5rem;
+    }
+}
+
+.Cards{
+    display: grid;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Cards{
+    grid-template-columns: repeat(2, 50%);
+    align-items: stretch;
+    }
+
+    .card{
+        height: 38rem;
+    }
+    
+    .card_escuro{
+
+        height: 38rem;
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+    
+    .Cards{
+        grid-template-columns: repeat(3, 33%);
+      }      
+        .card{
+            height: 38rem;
+        }
         
+        .card_escuro{
+            height: 38rem;
+        }
+
+
+
+}
+
+    .card{
+        background-color: #99746d;
+        border-radius: 2rem;
+        margin: 8%;
+    }
+
+    .card_escuro{
+        background-color: #55342d;
+        border-radius: 2rem;
+        margin: 8%;
+    }    
+
+    .titulo_card{
+        display: flex;
+        padding: 1rem 0rem 0rem 0rem;
+        align-items: center;
+    }
+
+    .titulo_card img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .titulo_card h1{
+        font-size: clamp(1.3rem, 1.4rem, 5rem);
+        font-weight: 500;
+        color: aliceblue;
+        text-align: center;
+    }
+
+
+    /* MENU */
+
     header{
         display: flex;
         justify-content: space-between;
@@ -39,8 +149,7 @@ background-color: #63413a;
         display: flex;
         align-items: center;
         justify-content: left;
-        gap: 15px;
-
+        gap: 12rem;
     }
 
     .menu li{
@@ -50,41 +159,56 @@ background-color: #63413a;
     .menu a{
     color: aliceblue;
     text-decoration: none;
-    font-size: 0.9rem;
-
+    font-size: clamp(1rem, 2.5vw, 6rem);
     }
 
-    /* BANNER!! */
 
+
+
+
+
+    /* BANNER!! */
     .banner{
-        height: 13rem;
         width: 100%;
+        aspect-ratio: 16 / 5;
         overflow: hidden;
-        background-image: url(/assets/banner\ hannah.png);
+        background-image: url(/assets/banner-hannah.png);
         background-size:cover; 
         background-position: center; 
         background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-start;
     }
 
     .banner_texto{
-        padding: 2rem 0rem 0rem 2rem;
+        height: 100%;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
+
+    .banner_texto{
+
+        
+    }
+
 
     .banner_texto h1{
         margin: 0px;
-        font-size: 1.2rem;
+        font-size: clamp(1rem, vw, 6rem);
         font-weight: 300;
-        width: 200px;
+        width: 20rem;
         color: aliceblue;
         text-align: left;
     }
 
     .banner_texto nav{
-
         display: flex;
         list-style: none;
         gap: 15px;
-        padding-top: 8px;
+        padding-top: 8px;  
 
     }
 
@@ -102,173 +226,64 @@ background-color: #63413a;
     }
 
 
-    /* ADOTAR!!! */
-
-    .adotar{
-        padding: 0rem 3rem 3rem 3rem;
-        
-    }
-
-    .adotar h1{
-
-        font-size: 1rem;
-        text-align: justify;
-        color: aliceblue;
-        font-weight: 400;
-
-
-    }
-
-
-    .adotar img{
-
-        width: 50%;
-        height: 100%;
-        border-radius: 30px;
-
-    }
-
-    /* FORMULARIO */
-
-
-    .formulario{
-        margin: 0rem 2rem 4rem 2rem;
-        border: 1px solid #b48f8f ;
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 30px rgba(114, 64, 64, 0.2);
-        color: #f0f0f0;
-        padding: 1rem;
-    }
-
-    .formulario input{
-
-        border: 1px solid #664842 ;
-        border-radius: 5px;
-        background-color: #664842;
-        font-size: 16px;
-        color:aliceblue;
-        font-weight: 400;
-
-
-    }
-
-    .perguntas{
-
-        text-align: left;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        background-color: #664842;
-        font-size: 1rem;
-        color: rgb(255, 255, 255);
-    }
-
-
-    .formulario button{
-        text-align: center;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        border: 1px solid #b48f8f;
-        background-color: #63413a;
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: rgb(255, 255, 255);
-
-    }
-
-
-
-    .sobre_nos{
-        text-align: center;    
-            padding: 0rem 3rem 0rem 3rem;       
-
-
-    }
-
-
-    .sobre_nos img{
-        padding-top: 1rem ;
-        height: 12rem;
-        width: 20rem;
-        border-radius: 1rem;
-        overflow: hidden;
-
-
-
-    }
-
-    .car6_SobreNos h1{
-        font-weight: 500;
-        color: aliceblue;
-        text-align: center;
-
-    }
-
-
-    #sobrenos{
-        font-size: 1rem;
-        text-align: justify;
-        font-weight: 400;
-        color: aliceblue;
-    }
-
-
-
     /* CARD 1!!!! */
     .card1_Dogs{
-        background-color: #99746d;
         width: auto;
         height: auto;
         margin: 0px;
-
-    }
-
-    .titulo_card{
-        display: flex;
-        padding: 1rem 0rem 0rem 0rem;
-        align-items: center;
-
-    }
-
-
-
-    .titulo_card img {
-        width: 8rem;
-        height: 8rem;
-    }
-
-    .titulo_card h1{
-        font-weight: 500;
-        color: aliceblue;
-        text-align: center;
     }
 
     .cachorros{
-        display: flex;
         padding: 2rem;
     }
 
-
-
     .cachorros img{
         border-radius: 15%;
-        height: 30%;
-        width: 30%;
-
+        height: 70%;
+        width: 100%;
     }
 
     .texto_dogs{
         padding-left: 1rem;
-        font-size: 80%;
+        font-size: clamp(1rem, 0.8vw, 6rem);
         color: aliceblue;
         font-weight: 300;
-
     }
 
     #descricao{
-
         font-weight: 400;
-
-
-
     }
-}
+
+    /* FOOTER */
+    
+    footer{
+    background-color: #55342d;
+    padding: 3rem;
+    }
+    
+    .conteudo_footer{
+        display: flex;
+        justify-content: space-between;    
+    }
+    
+    
+    .footer_logo{
+    color: #ffffff;
+    }
+    
+    
+    .footer_logo h1{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+        
+    .footer_logo p{
+        font-size: 1rem;
+    }
+    
+    .footer_logo img{
+        max-width: 100%;
+        height: auto;
+        display: block;    
+    }
+

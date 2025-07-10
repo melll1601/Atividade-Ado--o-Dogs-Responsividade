@@ -105,7 +105,7 @@ background-color: #63413a;
     width: 100%;
     color: aliceblue;
     text-decoration: none;
-    font-size: clamp(1rem, 1.8vw, 6rem);
+    font-size: clamp(1rem, 1.3vw, 6rem);
     }
 
     .menu a:hover{
@@ -140,7 +140,7 @@ background-color: #63413a;
 
     .banner_texto h1{
         margin: 0px;
-        font-size: clamp(0.9rem, 2.3vw, 6rem);
+        font-size: clamp(0.9rem, 2vw, 6rem);
         font-weight: 300;
         color: aliceblue;
         text-align: left;
@@ -157,7 +157,7 @@ background-color: #63413a;
     .banner_texto a{
         display: inline-block;
         text-decoration: none;
-        font-size: clamp(0.9rem, 2vw, 6rem);
+        font-size: clamp(0.9rem, 1.5vw, 6rem);
         color: aliceblue;
         border: 1px solid aliceblue;
         border-radius: 20px;
@@ -177,13 +177,13 @@ background-color: #63413a;
 
     .cachorros img{
         border-radius: 15%;
-        height: 70%;
+        height: 80%;
         width: 100%;
     }
 
     .texto_dogs{
         padding-left: 1rem;
-        font-size: clamp(0.8rem, 1.2vw, 6rem);
+        font-size: clamp(0.8rem, 1.0vw, 6rem);
         color: aliceblue;
         font-weight: 300;
     }
@@ -213,11 +213,11 @@ background-color: #63413a;
     
     .conteudo_footer h1{
         font-weight: 500;
-        font-size: clamp(0.1rem, 2vw, 6rem);
+        font-size: clamp(0.1rem, 1.5vw, 6rem);
     }
         
     .conteudo_footer p{
-        font-size: clamp(0.1rem, 1.4vw, 6rem);
+        font-size: clamp(0.1rem, 1.0vw, 6rem);
 
     }
     
